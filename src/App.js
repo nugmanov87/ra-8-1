@@ -3,15 +3,15 @@ import List from "./components/List";
 import Details from "./components/Details";
 
 function App() {
-  const [profile, setInfo] = useState({ id: null, name: "" });
+  const [profile, setProfile] = useState({ id: null, name: "" });
 
   const handleProfile = (id, name) => {
-    setInfo({ id, name });
+    setProfile({ id, name });
   };
 
   return (
     <div className="App">
-      <div className="ui raised very padded text container segment">
+      <div className="ui raised very text container">
         <div className="ui grid">
           <div className="eight wide column">
             <List handleProfile={handleProfile} />

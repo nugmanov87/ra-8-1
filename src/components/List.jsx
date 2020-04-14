@@ -21,7 +21,7 @@ const List = ({ handleProfile }) => {
 
   return (
     <div className="ui basic">
-      <div className="ui vertical menu">
+      <div className="ui vertical menu button primary">
         {names.map(({ id, name }) => (
           <div
             className={`link red item ${id === select ? "active" : ""}`}

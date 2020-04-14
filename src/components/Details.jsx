@@ -18,7 +18,7 @@ const Details = ({ info }) => {
   if (!data) return null;
 
   return (
-    <div className="ui card">
+    <div className="ui red card">
       <div className="image">
         <img src={data.avatar} alt="avatar" />
       </div>
